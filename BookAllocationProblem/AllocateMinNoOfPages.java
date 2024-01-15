@@ -62,7 +62,7 @@ public class AllocateMinNoOfPages {
         if (M > N)
             return -1;
         int result = -1;
-        int low = 0, high = Arrays.stream(A).sum();
+        int low = 0, high = Arrays.stream(A).sum(); // sum of all elements of array
         while (low <= high) {
             int mid = low + (high - low) / 2;
             boolean isPossibleSolution = isPossibleSolutionFunc(A, N, M, mid);
