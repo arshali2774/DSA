@@ -18,7 +18,7 @@ public class Delimiter {
         // there are certain characters which will stop taking input once it hit the
         // delimiter.
         // here we entered a space seperated string and the input stops after taking the
-        // first word.
+        // first word
         char ch[] = sc.next().toCharArray();
         System.out.println(new String(ch));
 
