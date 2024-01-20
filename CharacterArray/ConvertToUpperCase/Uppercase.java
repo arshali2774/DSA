@@ -13,6 +13,7 @@ public class Uppercase {
         char[] ch = s.toCharArray();
         convertToUpperCase(ch);
         System.out.println(new String(ch));
+        sc.close();
     }
 
     public static void convertToUpperCase(char[] ch) {
