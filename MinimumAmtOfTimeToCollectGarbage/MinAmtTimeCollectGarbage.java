@@ -14,6 +14,24 @@ public class MinAmtTimeCollectGarbage {
     System.out.println(garbageCollection(garbage1, travel1));
   }
 
+  // public static int optimizedGarbageCollection(String[] garbage, int[] travel)
+  // {
+  // int prefixArray[] = new int[travel.length];
+  // prefixArray[0] = travel[0];
+  // for (int i = 1; i < prefixArray.length; ++i) {
+  // prefixArray[i] += prefixArray[i - 1] + travel[i];
+  // }
+  // int timeM = getTime(garbage, prefixArray, 'M');
+  // int timeG = getTime(garbage, prefixArray, 'G');
+  // int timeP = getTime(garbage, prefixArray, 'P');
+  // return timeG + timeM + timeP;
+  // }
+
+  // public static int getTime(String[] garbage, int prefixArray[], char
+  // truckType) {
+
+  // }
+
   public static int garbageCollection(String[] garbage, int[] travel) {
     // time taken by each truck to pick up their garbages
     int glassTruckPick = 0;
