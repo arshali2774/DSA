@@ -12,7 +12,7 @@ import java.util.Arrays;
 // A[] = {12,34,67,90}
 // M = 2
 // Output:113
-// Explanation:Allocation can be done in 
+// Explanation:Allocation can be done in
 // following ways:
 // {12} and {34, 67, 90} Maximum Pages = 191
 // {12, 34} and {67, 90} Maximum Pages = 157
@@ -78,7 +78,7 @@ public class AllocateMinNoOfPages {
 
     public static boolean isPossibleSolutionFunc(int A[], int N, int M, int mid) {
         int pageSum = 0;
-        int count = 1; // count 2 se shuru kiya hai kyunki hum students ko count kr rahe hai, agar
+        int count = 1; // count 1 se shuru kiya hai kyunki hum students ko count kr rahe hai, agar
                        // count 0 lete to count>=M check krna padta. waise bhi real life main hum 1 2
                        // aise count krte hai. M is number of students to agar counting 2 se zyada badi
                        // to hum false return krna hai mtlab. We need more students but there are none.

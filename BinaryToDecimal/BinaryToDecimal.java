@@ -1,3 +1,5 @@
+package BinaryToDecimal;
+
 /**
  * BinaryToDecimal
  */
