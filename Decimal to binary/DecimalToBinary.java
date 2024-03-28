@@ -10,6 +10,7 @@ public class DecimalToBinary {
         System.out.println(binary1);
         int n2 = 10;
         DecimalToBinaryBitwise(n2);
+        DecimalToBinaryBitwise(7);
     }
 
     public static void DecimalToBinaryBitwise(int n) {

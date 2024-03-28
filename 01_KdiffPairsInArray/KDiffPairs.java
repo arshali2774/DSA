@@ -11,13 +11,13 @@ import java.util.Set;
  * - i>=0 && j<nums.length
  * - i!= j
  * - |nums[i]-nums[j]|==k
- * 
+ *
  */
 /*
  * -------------------------------- Intuition --------------------------------
  * use two for loops to find pairs.
  * but this will result in O(n^2) time complexity.
- * 
+ *
  * /* ----------------------------- Optimization -----------------------------
  * Sort array and use two pointer approach
  * time complexity = O(nlogn);
@@ -38,7 +38,7 @@ import java.util.Set;
  * where x1 will be the ith element of the array.
  * now we want to calculate x2 and search x2 in the array.
  * excluding x1 from the array.
- * 
+ *
  */
 
 public class KDiffPairs {
