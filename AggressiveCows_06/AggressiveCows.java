@@ -1,4 +1,4 @@
-package AggressiveCows;
+package AggressiveCows_06;
 
 import java.util.Arrays;
 
@@ -11,7 +11,7 @@ import java.util.Arrays;
  * The first line of input contains two space-separated integers n and k.
  * The second line contains n space-separated integers denoting the position of
  * the stalls.
- * 
+ *
  * Input:
  * n=5
  * k=3
@@ -24,15 +24,15 @@ import java.util.Arrays;
  * the third cow can be placed at stalls[3].
  * The minimum distance between cows, in this case, is 3,
  * which also is the largest among all possible ways.
- * 
+ *
  * Your Task:
  * Complete the function int solve(), which takes integer n, k, and a vector
  * stalls with n integers as input and returns the largest possible minimum
  * distance between cows.
- * 
+ *
  * Expected Time Complexity: O(n*log(10^9)).
  * Expected Auxiliary Space: O(1).
- * 
+ *
  * Constraints:
  * 2 <= n <= 10^5
  * 2 <= k <= n

@@ -1,4 +1,4 @@
-package ExponentialSearch;
+package ExponentialSearch_03;
 /* ----- Also known as doubling search, galloping search, strazic search ---- */
 
 /* -------------------------- Works on sorted array ------------------------- */
