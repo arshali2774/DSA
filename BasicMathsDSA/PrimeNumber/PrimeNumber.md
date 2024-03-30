@@ -14,4 +14,4 @@
 ### Naive Approach
 
 - Let say we wanna check if a number `n` is prime or not.
-- Run a loop from `i=2` to <n>
+  - Run a loop from `i=2` to `i<n`.
