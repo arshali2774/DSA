@@ -1,5 +1,10 @@
 package MinimumTimeDiff;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
 /**
  * MinimumTimeDifference
  * Given a list of 24-hour clock time points in "HH:MM" format, return the
@@ -24,10 +29,29 @@ public class MinimumTimeDifference {
     System.out.println(minTimeDiff);
     System.out.println(findDiff1(arr2));
     System.out.println(findDiff1(arr1));
+    List<String> timePoints = new ArrayList<>(Arrays.asList("23:59", "00:00"));
+
+    System.out.println(findMinDifference(timePoints));
+  }
+
+  public static int findMinDifference(List<String> timePoints) {
+    int ans = 24 * 60; // 1440 mins
+    List<Integer> minuteList = new ArrayList<>();
+    for (String i : timePoints) {
+      int num = Integer.valueOf(i.substring(0, 2)) * 60 + Integer.valueOf(i.substring(3));
+      minuteList.add(num);
+    }
+    Collections.sort(minuteList);
+    for (int i = 0; i < minuteList.size() - 1; i++) {
+      ans = Integer.min(ans, minuteList.get(i + 1) - minuteList.get(i));
+    }
+    int lastDiff = minuteList.get(0) + 1440 - minuteList.get(minuteList.size() - 1);
+    ans = Integer.min(ans, lastDiff);
+    return ans;
   }
 
   public static int findDiff1(String arr[]) {
-    int ans = 24 * 60; // max value can be this.
+    int ans = 24 * 60; // max value can be this. In minutes
     int temp = 24 * 60;
     // making a boolean array
     boolean bucket[] = new boolean[24 * 60];
