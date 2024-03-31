@@ -38,10 +38,15 @@
 
 ### Sieve of Eratosthenes
 
-- Approach
-
----
+- This approach comes useful when we wanna count primes between `1 to n`. Excluding `n` i.e. `1 to n-1`.
+- We take a boolean array of size `n`, and initialize all elements with `true`.
+- Then we first set elements at index `0` and `1` as `false` as we know they can't be prime.
+- We know that `2` is prime then its multiples can't be prime, so we mark `2` as prime and its multiples `false`.
+- Then same for `3` and so on.
+- At the end all indexs with `true` values are prime numbers.
 
 ### Segmented Sieve
 
-- Approach
+- It is a variation of **Sieve of Eratosthenes** approach.
+- In this we are given a `low` and `high` and we have to find primes between this range.
+- The algo is same but in this we have to start from `low` instead if `0`.
