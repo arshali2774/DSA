@@ -25,7 +25,14 @@
 
 ### Square Root Approach
 
-- Approach
+- This approach says that if the number `n` is non-prime then,
+  - Atleast one of the factors should be smaller than `sqrt(n)`.
+  - Let say we have `n = a * b`.
+  - And suppose if, `a > sqrt(n)` and `b > sqrt(n)`, then we can say that `a*b > n`.
+  - Which is false therefore one of the factors should be less than square root of `n`.
+- To apply this we need to just change the `for loop` of `checkPrime` function.
+- In for loop we are checking till `n`, we have to change that to `i<=sqrt(n)`.
+- Still we have issue of time complexity for larger test cases.
 
 ---
 
