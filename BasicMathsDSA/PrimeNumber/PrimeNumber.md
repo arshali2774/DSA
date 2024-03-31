@@ -45,6 +45,8 @@
 - Then same for `3` and so on.
 - At the end all indexs with `true` values are prime numbers.
 
+---
+
 ### Segmented Sieve
 
 - It is a variation of **Sieve of Eratosthenes** approach.
